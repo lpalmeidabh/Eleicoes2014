@@ -1,0 +1,58 @@
+<ul>
+<%
+	if @tipoBusca == 1
+		@candidatos.each do |candidato|
+			%>
+				<li>
+					<img src=<%=candidato["foto"]%>><br>
+					<%=candidato["apelido"]%><br>
+					<%=candidato["nome"]%><br>
+					<%=candidato["numero"]%><br>
+					<%=candidato["titulo"]%><br>
+					<%=candidato["CPF"]%><br>
+					<%=candidato["matricula"]%><br>
+					<%=candidato["cargo"]%><br>
+					<%=candidato["estado"]%><br>
+					<%=candidato["partido"]%><br>
+					<%=candidato["idade"]%><br>
+					<%=candidato["instrucao"]%><br>
+					<%=candidato["ocupacao"]%><br>
+					<%=candidato["miniBio"]%><br>
+					<%=candidato["cargos"]%><br>
+					<%=candidato["previsao"]%><br>
+					<%=candidato["bancadas"]%><br>
+					<%=candidato["processos"]%><br>
+					<%=candidato["casaAtual"]%><br>
+					<%=candidato["reeleicao"]%><br>
+				</li>
+				<hr>
+			<%
+		end
+	else
+		%>
+		<li>
+			<img src=<%=@candidatos["foto"]%>><br>
+			<%=@candidatos["apelido"]%><br>
+			<%=@candidatos["nome"]%><br>
+			<%=@candidatos["numero"]%><br>
+			<%=@candidatos["titulo"]%><br>
+			<%=@candidatos["CPF"]%><br>
+			<%=@candidatos["matricula"]%><br>
+			<%=@candidatos["cargo"]%><br>
+			<%=@candidatos["estado"]%><br>
+			<%=@candidatos["partido"]%><br>
+			<%=@candidatos["idade"]%><br>
+			<%=@candidatos["instrucao"]%><br>
+			<%=@candidatos["ocupacao"]%><br>
+			<%=@candidatos["miniBio"]%><br>
+			<%=@candidatos["cargos"]%><br>
+			<%=@candidatos["previsao"]%><br>
+			<%=@candidatos["bancadas"]%><br>
+			<%=@candidatos["processos"]%><br>
+			<%=@candidatos["casaAtual"]%><br>
+			<%=@candidatos["reeleicao"]%><br>
+		</li>
+		<%
+	end
+%>
+</ul>

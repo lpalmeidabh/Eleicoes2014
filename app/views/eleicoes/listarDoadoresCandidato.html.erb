@@ -1,0 +1,13 @@
+<ul>
+<%
+	@doadores.each do |doador|
+		%>
+			<li>
+				<%=doador["nome"]%><br>
+				<%=doador["cgc"]%><br>
+				<%=doador["montante"]%>
+			</li>
+		<%
+	end
+%>
+</ul>

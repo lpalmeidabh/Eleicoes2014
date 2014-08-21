@@ -1,0 +1,18 @@
+<ul>
+<%
+	@candidaturas.each do |candidatura|
+		%>
+			<li>
+				<%=candidatura["anoEleitoral"]%><br>
+				<%=candidatura["cargo"]%><br>
+				<%=candidatura["partidoSigla"]%><br>
+				<%=candidatura["municipio"]%><br>
+				<%=candidatura["estadoSigla"]%><br>
+				<%=candidatura["resultado"]%><br>
+				<%=candidatura["votosObtidos"]%><br>
+				<%=candidatura["recursosFinanceiros"]%><br>
+			</li>
+		<%
+	end
+%>
+</ul>

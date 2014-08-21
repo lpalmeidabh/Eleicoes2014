@@ -1,0 +1,18 @@
+<ul>
+<%
+	@estatisticas.each do |estatistica|
+		%>
+			<li>
+				<%=estatistica["faltas_plen"]%><br>
+				<%=estatistica["media_plen"]%><br>
+				<%=estatistica["faltas_com"]%><br>
+				<%=estatistica["media_com"]%><br>
+				<%=estatistica["evol"]%><br>
+				<%=estatistica["ano_ref"]%><br>
+				<%=estatistica["emendas"]%><br>
+				<%=estatistica["media_emendas"]%><br>
+			</li>
+		<%
+	end
+%>
+</ul>

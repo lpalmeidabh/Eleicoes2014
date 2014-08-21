@@ -1,0 +1,13 @@
+<ul>
+<%
+	@bens.each do |bem|
+		%>
+			<li>
+				<%=bem["bem"]%><br>
+				<%=bem["montante"]%><br>
+				<%=bem["ano"]%>
+			</li>
+		<%
+	end
+%>
+</ul>
