@@ -12,7 +12,7 @@ class EleicoesController < ApplicationController
 		if params[:id]
 			optional_param = "/" + params[:id]
 			@tipoBusca = 2
-		else
+		else			
 			vars = {"estado" => params[:estado], "partido" => params[:partido], "cargo" => params[:cargo], "nome" => params[:nome]}
 		end
 
